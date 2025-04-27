@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verstka</title>
+    <style>
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: 'Inter', sans-serif;
+         }
+
+         body {
+             overflow-x: hidden;
+         }
+
+        nav {
+            width: 1440px;
+            height: 83px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 80px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 74px;
+            width: 537px;
+            height: 35px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 56px;
+            width: 428px;
+            height: 24px;
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .account-section {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            width: 279px;
+            height: 26px;
+        }
+
+        .sign-in {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 90px;
+            height: 26px;
+        }
+
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+         .mobile-menu {
+             display: none;
+             cursor: pointer;
+         }
+
+        .hero-section {
+            width: 846px;
+            margin: 80px auto 0;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .main-heading {
+            width: 846px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 72px;
+            color: #172026;
+            margin-bottom: 24px;
+        }
+
+        .sub-text {
+            width: 846px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #172026;
+            margin-bottom: 40px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        .primary-btn {
+            padding: 16px 32px;
+            background: #4328EB;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .secondary-btn {
+            padding: 16px 32px;
+            background: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #4328EB;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 1150px;
+            height: 738px;
+            margin: 50px auto 0;
+        }
+
+        .web-section {
+            position: absolute;
+            width: 956px;
+            height: 680px;
+            left: -200px;
+        }
+
+        .desktop-light {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            border-radius: 16px;
+            box-shadow: 0 56px 232px -56px rgba(0,0,0,0.25);
+        }
+
+        .web-overlay {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            top: 9px;
+            left: 9px;
+            background: #FFFFFF;
+            opacity: 0.8;
+            border-radius: 8px;
+        }
+
+        .mobile-section {
+            position: absolute;
+            width: 272px;
+            height: 586px;
+            top: 152px;
+            left: 680px;
+        }
+
+        .mobile-dark {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            border-radius: 16px;
+        }
+
+        .mobile-overlay {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            top: 5px;
+            left: 5px;
+            background: #172026;
+            opacity: 0.5;
+            border-radius: 50%;
+        }
+
+        .clients-section {
+            width: 1280px;
+            height: 64px;
+            margin-top: 60px;
+            margin-left: -238px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .trust-heading {
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            gap: 72px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+         .gradient-container {
+             position: absolute;
+             z-index: -1;
+             width: 100%;
+             left: 50%;
+             transform: translateX(-50%);
+         }
+
+         .gradient-1 {
+             position: absolute;
+             width: 100%;
+             height: 400px;
+             top: 900px;
+             background: url('../images/GradientImage.png');
+         }
+
+         .gradient-2 {
+             position: absolute;
+             width: 1800px;
+             height: 400px;
+             top: 600px;
+             left: -112px;
+             background: url('../images/GradientImage.png');
+             filter: blur(40px);
+         }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                padding: 24px 32px;
+            }
+
+            .menu, .account-section {
+                display: none;
+            }
+
+            .burger-menu {
+                font-size: 32px;
+                display: block;
+                cursor: pointer;
+                padding: 10px;
+            }
+
+            .mobile-menu {
+                display: none;
+                position: absolute;
+                text-align: right;
+                top: 83px;
+                left: 0;
+                right: 20px;
+                background: white;
+                padding: 12px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .mobile-menu.active { display: block; }
+            .mobile-menu a {
+                display: block;
+                padding: 10px 0;
+                color: #333;
+                text-decoration: none;
+            }
+
+            .nav-container {
+                width: auto;
+                gap: 20px;
+            }
+
+            .hero-section {
+                width: 100%;
+                padding: 0 16px;
+                margin-top: 60px;
+            }
+
+            .main-heading {
+                width: 100%;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .sub-text {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .primary-btn {
+                width: 75%;
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+
+            .secondary-btn {
+                width: 100%;
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+
+            .image-container {
+                width: 100%;
+                height: auto;
+            }
+
+            .web-section {
+                width: 300px;
+                height: 213px;
+                left: 0;
+            }
+
+            .desktop-light {
+                border-radius: 4px;
+            }
+
+            .mobile-section {
+                width: 85px;
+                height: 184px;
+                top: 50px;
+                left: 260px;
+            }
+
+            .mobile-dark {
+                border-radius: 4px;
+            }
+
+            .clients-section {
+                width: 100%;
+                margin: 40px 0;
+                padding: 0 16px;
+            }
+
+            .trust-heading {
+                font-size: 12px;
+                margin: 6px 0;
+            }
+
+            .logos-container {
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 0 16px;
+            }
+
+            .logos-container img {
+                width: 50px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <img src="../images/Logo.png" alt="Logo">
+        <div class="menu">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Careers</a>
+        </div>
+    </div>
+
+    <div class="account-section">
+        <span>Open an Account</span>
+        <div class="sign-in">
+            <img src="../images/User.png" alt="User">
+            <span>Sign In</span>
+        </div>
+    </div>
+
+    <div class="burger-menu" onclick="toggleMenu()">☰</div>
+</nav>
+
+<div class="mobile-menu">
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Enterprise</a>
+    <a href="#">Careers</a>
+    <a href="#">Open Account</a>
+    <a href="#">Sign In</a>
+</div>
+
+<div class="hero-section">
+    <div class="gradient-container">
+        <div class="gradient-1"></div>
+        <div class="gradient-2"></div>
+    </div>
+
+    <h1 class="main-heading">Start monitoring your website like a pro</h1>
+    <p class="sub-text">Get a bird's eye view with our customizable dashboard. Stay on top of things! Revamp your work process with our game-changing feature. Boost productivity and efficiency!</p>
+
+    <div class="button-group">
+        <button class="primary-btn">Try for free</button>
+        <a href="#" class="secondary-btn">
+            View Pricing
+            <img src="../images/Arrow.png" alt="Arrow">
+        </a>
+    </div>
+
+    <div class="image-container">
+        <div class="web-section">
+            <div class="web-overlay"></div>
+            <div class="desktop-light" style="background-image: url('../images/DesktopLight.png')"></div>
+        </div>
+
+        <div class="mobile-section">
+            <div class="mobile-overlay"></div>
+            <div class="mobile-dark" style="background-image: url('../images/MobileDark.png')"></div>
+        </div>
+    </div>
+
+    <section class="clients-section">
+        <div class="logos-container">
+            <h3 class="trust-heading">Trusted by these companies</h3>
+            <img src="../images/Google.png" alt="Google">
+            <img src="../images/Slack.png" alt="Slack">
+            <img src="../images/Trustpilot.png" alt="Trustpilot">
+            <img src="../images/CNN.png" alt="CNN">
+            <img src="../images/Clutch.png" alt="Clutch">
+        </div>
+    </section>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.mobile-menu');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
