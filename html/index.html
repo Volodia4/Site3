@@ -246,125 +246,354 @@
              filter: blur(40px);
          }
 
-        @media (max-width: 768px) {
-            nav {
-                width: 100%;
-                padding: 24px 32px;
-            }
+         .features-section {
+             max-width: 1440px;
+             margin: 0 auto;
+             padding: 120px 80px;
+             display: flex;
+             flex-direction: column;
+             gap: 80px;
+         }
 
-            .menu, .account-section {
-                display: none;
-            }
+         .feature {
+             display: flex;
+             align-items: center;
+             gap: 24px;
+             width: 100%;
+         }
 
-            .burger-menu {
-                font-size: 32px;
-                display: block;
-                cursor: pointer;
-                padding: 10px;
-            }
+         .feature-copy {
+             flex: 1;
+             display: flex;
+             flex-direction: column;
+             gap: 32px;
+             padding: 56px;
+         }
 
-            .mobile-menu {
-                display: none;
-                position: absolute;
-                text-align: right;
-                top: 83px;
-                left: 0;
-                right: 20px;
-                background: white;
-                padding: 12px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
+         .feature-heading {
+             display: flex;
+             flex-direction: column;
+             gap: 16px;
+         }
 
-            .mobile-menu.active { display: block; }
-            .mobile-menu a {
-                display: block;
-                padding: 10px 0;
-                color: #333;
-                text-decoration: none;
-            }
+         .feature-1-small-colored-text {
+             width: 572px;
+             height: 24px;
+             font-weight: 500;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             color: #0085FF;
+         }
 
-            .nav-container {
-                width: auto;
-                gap: 20px;
-            }
+         .feature-2-small-colored-text {
+             width: 572px;
+             height: 24px;
+             font-weight: 500;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             color: #00A424;
+         }
 
-            .hero-section {
-                width: 100%;
-                padding: 0 16px;
-                margin-top: 60px;
-            }
+         .feature-3-small-colored-text {
+             width: 572px;
+             height: 24px;
+             font-weight: 500;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             color: #EB2891;
+         }
 
-            .main-heading {
-                width: 100%;
-                font-size: 32px;
-                line-height: 48px;
-            }
+         .feature-heading-text {
+             width: 472px;
+             height: 116px;
+             font-weight: 500;
+             font-size: 42px;
+             line-height: 58px;
+             letter-spacing: 0;
+             color: #172026;
+         }
 
-            .sub-text {
-                width: 100%;
-                font-size: 16px;
-            }
+         .feature-subtext {
+             width: 472px;
+             height: 84px;
+             font-weight: 400;
+             font-size: 18px;
+             line-height: 28px;
+             letter-spacing: 0;
+             color: #36485C;
+         }
 
-            .primary-btn {
-                width: 75%;
-                padding: 12px 24px;
-                font-size: 16px;
-            }
+         .feature-checklist {
+             display: flex;
+             flex-direction: column;
+             gap: 24px;
+         }
 
-            .secondary-btn {
-                width: 100%;
-                padding: 12px 24px;
-                font-size: 16px;
-            }
+         .feature-checklist-text {
+             width: 479px;
+             height: 24px;
+             font-weight: 400;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             color: #36485C;
+         }
 
-            .image-container {
-                width: 100%;
-                height: auto;
-            }
+         .feature-arrow {
+             display: flex;
+             align-items: center;
+             gap: 12px;
+             padding: 24px 0;
+         }
 
-            .web-section {
-                width: 300px;
-                height: 213px;
-                left: 0;
-            }
+         .feature-arrow-btn {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             width: 30px;
+             height: 30px;
+             border-radius: 50%;
+             border: none;
+             cursor: pointer;
+             padding: 6px;
+             margin-left: -482px;
+         }
 
-            .desktop-light {
-                border-radius: 4px;
-            }
+         .feature-image {
+             flex: 1;
+             border-radius: 16px;
+             overflow: hidden;
+         }
 
-            .mobile-section {
-                width: 85px;
-                height: 184px;
-                top: 50px;
-                left: 260px;
-            }
+         .feature-image img {
+             width: 100%;
+             height: auto;
+             display: block;
+         }
 
-            .mobile-dark {
-                border-radius: 4px;
-            }
+         .feature-statics {
+             display: flex;
+             gap: 24px;
+             padding-top: 16px;
+         }
 
-            .clients-section {
-                width: 100%;
-                margin: 40px 0;
-                padding: 0 16px;
-            }
+         .feature-substatic {
+             width: 274px;
+             height: 80px;
+             gap: 16px;
+         }
 
-            .trust-heading {
-                font-size: 12px;
-                margin: 6px 0;
-            }
+         .feature-substatic-header {
+             width: 274px;
+             height: 40px;
+             font-weight: 500;
+             font-size: 32px;
+             line-height: 40px;
+             letter-spacing: 0;
+             color: #172026;
+         }
 
-            .logos-container {
-                flex-wrap: wrap;
-                gap: 20px;
-                padding: 0 16px;
-            }
+         .testimonials-section {
+             width: 1440px;
+             margin: 0 auto;
+             padding: 96px 80px;
+             background: #F4F8FA;
+             box-sizing: border-box;
+         }
 
-            .logos-container img {
-                width: 50px;
-                height: 30px;
-            }
-        }
+         .testimonials-copy {
+             width: 100%;
+             max-width: 1280px;
+             margin: 0 auto 80px;
+             text-align: center;
+         }
+
+         .testimonials-header {
+             font-weight: 500;
+             font-size: 42px;
+             line-height: 58px;
+             color: #172026;
+             margin-bottom: 24px;
+         }
+
+         .testimonials-subtext {
+             font-weight: 400;
+             font-size: 18px;
+             line-height: 28px;
+             color: #36485C;
+             margin: 0 auto;
+             max-width: 680px;
+         }
+
+         .testimonials {
+             display: flex;
+             flex-direction: column;
+             row-gap: 60px;
+             overflow: hidden;
+         }
+
+         .testimonials-card {
+             flex: 0 0 519px;
+             width: 519px;
+             height: 232px;
+             padding: 24px;
+             background: #FFFFFF;
+             border-radius: 16px;
+             box-sizing: border-box;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+         }
+
+         .testimonials-card img {
+             width: 100%;
+             height: auto;
+             margin-bottom: 16px;
+             object-fit: cover;
+         }
+
+         .testimonials-row {
+             display: flex;
+             gap: 40px;
+             width: max-content;
+             animation: scroll 40s linear infinite;
+         }
+
+         .testimonials-row:nth-child(even) {
+             animation-direction: reverse;
+         }
+
+         @keyframes scroll {
+             from { transform: translateX(0); }
+             to   { transform: translateX(-50%); }
+         }
+
+         @media (max-width: 768px) {
+             nav {
+                 width: 100%;
+                 padding: 24px 32px;
+             }
+
+             .menu, .account-section {
+                 display: none;
+             }
+
+             .burger-menu {
+                 font-size: 32px;
+                 display: block;
+                 cursor: pointer;
+                 padding: 10px;
+             }
+
+             .mobile-menu {
+                 display: none;
+                 position: absolute;
+                 text-align: right;
+                 top: 83px;
+                 left: 0;
+                 right: 20px;
+                 background: white;
+                 padding: 12px;
+                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+             }
+
+             .mobile-menu.active {
+                 display: block;
+             }
+
+             .mobile-menu a {
+                 display: block;
+                 padding: 10px 0;
+                 color: #333;
+                 text-decoration: none;
+             }
+
+             .nav-container {
+                 width: auto;
+                 gap: 20px;
+             }
+
+             .hero-section {
+                 width: 100%;
+                 padding: 0 16px;
+                 margin-top: 60px;
+             }
+
+             .main-heading {
+                 width: 100%;
+                 font-size: 32px;
+                 line-height: 48px;
+             }
+
+             .sub-text {
+                 width: 100%;
+                 font-size: 16px;
+             }
+
+             .primary-btn {
+                 width: 75%;
+                 padding: 12px 24px;
+                 font-size: 16px;
+             }
+
+             .secondary-btn {
+                 width: 100%;
+                 padding: 12px 24px;
+                 font-size: 16px;
+             }
+
+             .image-container {
+                 width: 100%;
+                 height: auto;
+             }
+
+             .web-section {
+                 width: 300px;
+                 height: 213px;
+                 left: 0;
+             }
+
+             .desktop-light {
+                 border-radius: 4px;
+             }
+
+             .mobile-section {
+                 width: 85px;
+                 height: 184px;
+                 top: 50px;
+                 left: 260px;
+             }
+
+             .mobile-dark {
+                 border-radius: 4px;
+             }
+
+             .clients-section {
+                 width: 100%;
+                 margin: 40px 0;
+                 padding: 0 16px;
+             }
+
+             .trust-heading {
+                 font-size: 12px;
+                 margin: 6px 0;
+             }
+
+             .logos-container {
+                 flex-wrap: wrap;
+                 gap: 20px;
+                 padding: 0 16px;
+             }
+
+             .logos-container img {
+                 width: 50px;
+                 height: 30px;
+             }
+         }
     </style>
 </head>
 <body>
@@ -440,11 +669,166 @@
     </section>
 </div>
 
+<div class = "features-section">
+    <div class = "feature">
+        <div class = "feature-copy">
+            <div class = "feature-heading">
+                <p class="feature-1-small-colored-text">Sales Monitoring</p>
+                <h3 class="feature-heading-text">Simplify your sales monitoring</h3>
+                <p class="feature-subtext">Stay on top of things and revamp your work process with our game-changing feature. Get a bird's eye view with our customizable dashboard.</p>
+            </div>
+
+            <div class = "feature-checklist">
+                <p class="feature-checklist-text">✓ Lorem ipsum dolor sit amet</p>
+                <p class="feature-checklist-text">✓ Consectetur adipiscing elit</p>
+                <p class="feature-checklist-text">✓ Sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+
+            <div class = "feature-arrow">
+                <p class="feature-1-small-colored-text">Learn More</p>
+                <button class = "feature-arrow-btn">
+                    <img src="../images/ArrowF1.png" alt="arrow">
+                </button>
+            </div>
+        </div>
+
+        <div class = "feature-image">
+            <img src="../images/DesktopLightF1.png" alt="DesktopLightF1">
+        </div>
+    </div>
+
+    <div class = "feature">
+        <div class = "feature-image">
+            <img src="../images/MobileLightF2.png" alt="MobileLightF2">
+        </div>
+
+        <div class = "feature-copy">
+            <div class = "feature-heading">
+                <p class="feature-2-small-colored-text">Customer Support</p>
+                <h3 class="feature-heading-text">Get in touch with your customers</h3>
+                <p class="feature-subtext">Stay on top of things and revamp your work process with our game-changing feature. Get a bird's eye view with our customizable dashboard.</p>
+            </div>
+
+            <div class = "feature-checklist">
+                <p class="feature-checklist-text">✓ Lorem ipsum dolor sit amet</p>
+                <p class="feature-checklist-text">✓ Consectetur adipiscing elit</p>
+                <p class="feature-checklist-text">✓ Sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+
+            <div class = "feature-arrow">
+                <p class="feature-2-small-colored-text">Learn More</p>
+                <button class = "feature-arrow-btn">
+                    <img src="../images/ArrowF2.png" alt="arrow">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "feature">
+        <div class = "feature-copy">
+            <div class = "feature-heading">
+                <p class="feature-3-small-colored-text">Growth Monitoring</p>
+                <h3 class="feature-heading-text">Monitor your site’s new subscribers</h3>
+                <p class="feature-subtext">Stay on top of things and revamp your work process with our game-changing feature. Get a bird's eye view with our customizable dashboard.</p>
+            </div>
+
+            <div class = "feature-statics">
+                <div class = "feature-substatic">
+                    <h3 class="feature-substatic-header">100+</h3>
+                    <p class="feature-subtext">Lorem ipsum dolor sit</p>
+                </div>
+
+                <div class = "feature-substatic">
+                    <h3 class="feature-substatic-header">800+</h3>
+                    <p class="feature-subtext">Conse adipiscing elit</p>
+                </div>
+            </div>
+
+            <div class = "feature-arrow">
+                <p class="feature-3-small-colored-text">Learn More</p>
+                <button class = "feature-arrow-btn">
+                    <img src="../images/ArrowF3.png" alt="arrow">
+                </button>
+            </div>
+        </div>
+
+        <div class = "feature-image">
+            <img src="../images/MobileDarkF3.png" alt="MobileDarkF3">
+        </div>
+    </div>
+</div>
+
+<div class = "testimonials-section">
+    <div class = "testimonials-copy">
+        <h3 class="testimonials-header">Testimonials</h3>
+        <p class="testimonials-subtext">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    </div>
+
+    <div class = "testimonials">
+        <div class="testimonials-row">
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser1.png" alt="user">
+                <p class="testimonials-subtext">Ut enim ad minima veniam, quis nostrum exercitationem ullam? Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser2.png" alt="user">
+                <p class="testimonials-subtext">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet? Ut enim ad minima veniam, quis nostrum exercitationem ullam.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser3.png" alt="user">
+                <p class="testimonials-subtext">Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam.</p>
+            </div>
+        </div>
+
+        <div class="testimonials-row">
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser4.png" alt="user">
+                <p class="testimonials-subtext">Consectetur adipiscing elit duis tristique sollicitudin. Vel risus commodo viverra maecenas accumsan. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser5.png" alt="user">
+                <p class="testimonials-subtext">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet? Ut enim ad minima veniam, quis nostrum exercitationem ullam.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser6.png" alt="user">
+                <p class="testimonials-subtext">Ut enim ad minima veniam, quis nostrum exercitationem ullam? Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+        </div>
+
+        <div class="testimonials-row">
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser7.png" alt="user">
+                <p class="testimonials-subtext">Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser8.png" alt="user">
+                <p class="testimonials-subtext">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet? Ut enim ad minima veniam, quis nostrum exercitationem ullam.</p>
+            </div>
+
+            <div class = "testimonials-card">
+                <img src="../images/TestimonialsUser9.png" alt="user">
+                <p class="testimonials-subtext">Consectetur adipiscing elit duis tristique sollicitudin. Vel risus commodo viverra maecenas accumsan. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     function toggleMenu() {
         const menu = document.querySelector('.mobile-menu');
         menu.classList.toggle('active');
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.testimonials-row').forEach(row => {
+            row.innerHTML += row.innerHTML;
+        });
+    });
 </script>
 </body>
 </html>
