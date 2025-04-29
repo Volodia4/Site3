@@ -472,6 +472,339 @@
              to   { transform: translateX(-50%); }
          }
 
+         .faq-section {
+             padding: 40px;
+         }
+
+         .faq-content {
+             display: flex;
+             gap: 40px;
+             max-width: 1000px;
+             margin: 0 auto;
+         }
+
+         .faq-intro {
+             flex: 1;
+         }
+
+         .faq-accordion {
+             flex: 2;
+         }
+
+         .faq-title {
+             font-size: 1rem;
+             color: #ff4081;
+             margin-bottom: 10px;
+         }
+
+         .faq-heading {
+             font-size: 2rem;
+             color: #172026;
+             margin-bottom: 10px;
+         }
+
+         .faq-description {
+             font-size: 1rem;
+             color: #36485C;
+         }
+
+         .faq-item {
+             background-color: #e3f2fd;
+             border-radius: 8px;
+             margin-bottom: 10px;
+             overflow: hidden;
+         }
+
+         .faq-question {
+             width: 100%;
+             background: transparent;
+             border: none;
+             outline: none;
+             padding: 15px 20px;
+             cursor: pointer;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+         }
+
+         .faq-question:hover {
+             background-color: #d1e8f0;
+         }
+
+         .faq-question-text {
+             font-size: 1rem;
+             color: #172026;
+         }
+
+         .faq-icon {
+             font-size: 1.2rem;
+             color: #333;
+         }
+
+         .faq-answer {
+             max-height: 0;
+             overflow: hidden;
+             transition: max-height 0.3s ease;
+         }
+
+         .faq-answer p {
+             margin: 15px 0;
+             color: #36485C;
+             padding: 0 20px;
+         }
+
+         .pricing-wrapper {
+             text-align: center;
+             padding: 40px 20px;
+         }
+
+         .pricing-header h2 {
+             font-size: 2.5em;
+             color: #1f1f1f;
+             margin-bottom: 10px;
+         }
+
+         .pricing-header p {
+             font-size: 1.2em;
+             color: #666;
+             margin-bottom: 40px;
+         }
+
+         .pricing-section {
+             display: flex;
+             justify-content: space-between;
+             gap: 20px;
+             max-width: 1000px;
+             margin: 0 auto;
+         }
+
+         .pricing-card {
+             flex: 1 1 calc(33.33% - 20px);
+             background-color: #F3F0FF;
+             padding: 20px;
+             border-radius: 8px;
+             text-align: center;
+             color: #4328EB;
+             transition: background-color 0.3s ease, color 0.3s ease;
+         }
+
+         .pricing-card h3 {
+             font-size: 1.5em;
+             margin-bottom: 10px;
+         }
+
+         .pricing-card .price {
+             font-size: 2em;
+             margin: 10px 0;
+         }
+
+         .pricing-card .price span {
+             font-size: 0.5em;
+             color: #888;
+         }
+
+         .pricing-card p {
+             margin: 10px 0;
+             color: #555;
+         }
+
+         .pricing-card .features {
+             list-style: none;
+             padding: 0;
+             margin: 20px 0;
+             text-align: left;
+         }
+
+         .pricing-card .features li {
+             margin: 8px 0;
+             padding-left: 20px;
+             position: relative;
+             color: #555;
+         }
+
+         .pricing-card .features li::before {
+             content: '✔';
+             position: absolute;
+             left: 0;
+             color: #4328EB;
+         }
+
+         .btn {
+             background-color: #4328EB;
+             color: #fff;
+             border: none;
+             padding: 10px 20px;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: background-color 0.3s ease, color 0.3s ease;
+         }
+
+         .pricing-card:hover {
+             background-color: #4328EB;
+             color: #fff;
+         }
+
+         .pricing-card:hover .features li {
+             color: #F4F8FA;
+         }
+
+         .pricing-card:hover p,
+         .pricing-card:hover .price span {
+             color: #fff;
+         }
+
+         .pricing-card:hover .features li::before {
+             color: #F4F8FA;
+         }
+
+         .pricing-card:hover .btn {
+             background-color: #fff;
+             color: #4328EB;
+         }
+
+         .btn:hover {
+             background-color: #fff;
+             color: #4328EB;
+         }
+
+         .cta-banner {
+             position: relative;
+             width: 100%;
+             max-width: 1200px;
+             height: 400px;
+             margin: 2rem auto;
+             border-radius: 20px;
+             overflow: hidden;
+             background: url('../images/GradientImage.png') center/cover no-repeat;
+             padding: 5rem;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             text-align: center;
+             font-family: 'Inter', sans-serif;
+         }
+
+         .cta-content {
+             position: relative;
+             z-index: 1;
+             max-width: 600px;
+             color: #fff;
+             text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+         }
+
+         .cta-heading {
+             font-weight: 500;
+             font-size: 56px;
+             line-height: 64px;
+             letter-spacing: 0;
+             margin-bottom: 1.5rem;
+             text-align: center;
+         }
+
+         .cta-subtext {
+             font-weight: 400;
+             font-size: 18px;
+             line-height: 28px;
+             letter-spacing: 0;
+             margin-bottom: 2.5rem;
+             text-align: center;
+         }
+
+         .cta-actions {
+             display: flex;
+             justify-content: center;
+             gap: 1rem;
+         }
+
+         .cta-primary {
+             padding: 12px 30px;
+             border-radius: 8px;
+             background: #fff;
+             color: #F472B6;
+             font-weight: 500;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             text-align: center;
+             text-decoration: none;
+             transition: transform 0.2s;
+             font-family: 'Inter', sans-serif;
+         }
+
+         .cta-secondary {
+             padding: 12px 30px;
+             border-radius: 8px;
+             background: transparent;
+             color: #fff;
+             font-weight: 500;
+             font-size: 18px;
+             line-height: 24px;
+             letter-spacing: 0;
+             text-align: center;
+             text-decoration: none;
+             display: inline-flex;
+             align-items: center;
+             gap: 10px;
+             transition: transform 0.2s;
+             font-family: 'Inter', sans-serif;
+         }
+
+         .footer-container {
+             max-width: 1200px;
+             margin: 0 auto;
+             padding: 60px 20px 20px;
+             font-family: 'Inter', sans-serif;
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-start;
+             flex-wrap: wrap;
+         }
+
+         .footer-branding {
+             display: flex;
+             align-items: center;
+             gap: 15px;
+             flex: 1;
+             min-width: 200px;
+             margin-right: 80px;
+         }
+
+         .brand-text {
+             font-size: 20px;
+             font-weight: bold;
+             color: #333;
+         }
+
+         .footer-columns {
+             display: flex;
+             flex: 3;
+             justify-content: space-between;
+             gap: 30px;
+             min-width: 600px;
+         }
+
+         .footer-column ul {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+         }
+
+         .footer-column li {
+             margin-bottom: 32px;
+             font-size: 14px;
+             color: #666;
+         }
+
+         .copyright {
+             text-align: left;
+             font-size: 14px;
+             color: #999;
+             padding-top: 20px;
+             border-top: 1px solid #eee;
+             width: 100%;
+             margin-top: 40px;
+         }
+
          @media (max-width: 768px) {
              nav {
                  width: 100%;
@@ -592,6 +925,14 @@
              .logos-container img {
                  width: 50px;
                  height: 30px;
+             }
+
+             .faq-content {
+                 flex-direction: column;
+             }
+
+             .faq-intro, .faq-accordion {
+                 width: 100%;
              }
          }
     </style>
@@ -818,6 +1159,207 @@
     </div>
 </div>
 
+<div class="faq-section">
+    <div class="faq-content">
+        <div class="faq-intro">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <h3 class="faq-heading">Let's clarify some of your questions</h3>
+            <p class="faq-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            </p>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="faq-question-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="pricing-wrapper">
+    <div class="pricing-header">
+        <h2>Flexible plans for you</h2>
+        <p>No hidden fees!</p>
+    </div>
+
+    <section class="pricing-section">
+        <div class="pricing-card">
+            <h3>Free Trial</h3>
+            <p class="price">$0<span>/mo</span></p>
+            <p>Perfect for testing the waters</p>
+            <ul class="features">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Sed do eiusmod tempor</li>
+                <li>Consectetur adipiscing elit</li>
+            </ul>
+            <button class="btn">Start Trial</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Business</h3>
+            <p class="price">$500<span>/mo</span></p>
+            <p>Perfect for small businesses</p>
+            <ul class="features">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Sed do eiusmod tempor</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p>Perfect for big companies</p>
+            <ul class="features">
+                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                <li>Sed do eiusmod tempor incididunt ut labore</li>
+                <li>Nemo enim ipsam voluptatem quia voluptas</li>
+            </ul>
+            <button class="btn">Contact Us</button>
+        </div>
+    </section>
+</section>
+
+<div class="cta-banner">
+    <div class="cta-content">
+        <h1 class="cta-heading">Monitor your website<br>like a pro</h1>
+        <p class="cta-subtext">Join over 800+ happy site owners boosting productivity and efficiency!</p>
+        <div class="cta-actions">
+            <a href="#" class="cta-primary">Try for free</a>
+            <a href="#" class="cta-secondary">
+                Contact Sales
+                <img src="../images/ArrowCTA.png" alt="arrow" width="24" height="24">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-container">
+    <div class="footer-branding">
+        <img src="../images/Logo.png" alt="Logo">
+        <div class="brand-text">YOUR SITE</div>
+    </div>
+
+    <div class="footer-columns">
+        <div class="footer-column">
+            <ul>
+                <li>Features</li>
+                <li>Growth</li>
+                <li>Sales</li>
+                <li>Chat</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li>Pricing</li>
+                <li>Free Trial</li>
+                <li>Standard</li>
+                <li>Business</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li>Enterprise</li>
+                <li>Personalize</li>
+                <li>Automation</li>
+                <li>Invoicing</li>
+                <li>24/7 Support</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li>Careers</li>
+                <li>Open Positions</li>
+                <li>Part-Time</li>
+                <li>Contractual</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">© Copyright 2024. Your Site. All rights reserved.</div>
+</footer>
+
 <script>
     function toggleMenu() {
         const menu = document.querySelector('.mobile-menu');
@@ -829,6 +1371,27 @@
             row.innerHTML += row.innerHTML;
         });
     });
+
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '-';
+            }
+        });
+    });
+
+    const firstAnswer = document.querySelector('.faq-answer');
+    if (firstAnswer) {
+        firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
+        firstAnswer.previousElementSibling.querySelector('.faq-icon').textContent = '-';
+    }
 </script>
 </body>
 </html>

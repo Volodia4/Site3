@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae8b5a7-81bc-4872-9650-cf26084f6f33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/images/ArrowF1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ArrowF2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ArrowF3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/DesktopLightF1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MobileDarkF3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MobileLightF2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TestimonialsUser9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ArrowCTA.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
     </list>
@@ -90,6 +76,7 @@
       <workItem from="1745357452005" duration="7056000" />
       <workItem from="1745747746414" duration="17565000" />
       <workItem from="1745821086550" duration="15409000" />
+      <workItem from="1745914889956" duration="8467000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
