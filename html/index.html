@@ -927,12 +927,265 @@
                  height: 30px;
              }
 
+             .features-section {
+                 padding: 60px 20px;
+                 gap: 40px;
+             }
+
+             .feature {
+                 flex-direction: column;
+                 align-items: flex-start;
+                 gap: 16px;
+             }
+
+             .feature-copy {
+                 padding: 24px;
+                 gap: 16px;
+             }
+
+             .feature-1-small-colored-text,
+             .feature-2-small-colored-text,
+             .feature-3-small-colored-text {
+                 font-size: 16px;
+                 line-height: 22px;
+                 width: auto;
+                 height: auto;
+             }
+
+             .feature-heading-text {
+                 font-size: 28px;
+                 line-height: 36px;
+                 width: 100%;
+                 height: auto;
+             }
+
+             .feature-subtext,
+             .feature-checklist-text {
+                 font-size: 16px;
+                 line-height: 24px;
+                 width: 100%;
+                 height: auto;
+             }
+
+             .feature-checklist {
+                 gap: 12px;
+             }
+
+             .feature-arrow {
+                 width: 100%;
+                 justify-content: space-between;
+                 padding: 16px 0;
+             }
+
+             .feature-arrow-btn {
+                 margin-left: 0;
+             }
+
+             .feature-image {
+                 width: 100%;
+             }
+
+             .feature-image img {
+                 width: 100%;
+                 height: auto;
+             }
+
+             .feature-statics {
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 gap: 16px;
+                 padding-top: 12px;
+             }
+
+             .feature-substatic {
+                 width: calc(50% - 8px);
+             }
+
+             .testimonials-section {
+                 width: 100%;
+                 padding: 10px 8px;
+             }
+
+             .testimonials-header {
+                 font-size: 26px;
+                 line-height: 30px;
+                 margin-bottom: 0;
+             }
+
+             .testimonials-subtext {
+                 font-size: 12px;
+                 line-height: 14px;
+             }
+
+             .testimonials {
+                 display: flex;
+                 flex-direction: column;
+                 row-gap: 60px;
+                 overflow: hidden;
+             }
+
+             .testimonials-card {
+                 flex: 0 0 200px;
+                 width: 200px;
+                 height: 100px;
+                 padding: 0;
+                 border-radius: 8px;
+             }
+
+             .testimonials-card img {
+                 width: 80%;
+                 margin-bottom: 2px;
+             }
+
+             .testimonials-row {
+                 display: flex;
+                 gap: 30px;
+                 animation: scroll 30s linear infinite;
+             }
+
              .faq-content {
                  flex-direction: column;
              }
 
              .faq-intro, .faq-accordion {
                  width: 100%;
+             }
+
+             .pricing-wrapper {
+                 padding: 20px 10px;
+             }
+
+             .pricing-header h2 {
+                 font-size: 1.8em;
+                 margin-bottom: 8px;
+             }
+
+             .pricing-header p {
+                 font-size: 1em;
+                 margin-bottom: 24px;
+             }
+
+             .pricing-section {
+                 flex-direction: column;
+                 gap: 20px;
+                 max-width: none;
+                 margin: 0 auto;
+             }
+
+             .pricing-card {
+                 flex: none;
+                 width: 100%;
+                 max-width: 400px;
+                 margin: 0 auto;
+                 padding: 16px;
+             }
+
+             .pricing-card .price {
+                 font-size: 1.6em;
+             }
+
+             .pricing-card .features li {
+                 margin: 6px 0;
+                 padding-left: 16px;
+                 font-size: 0.9em;
+             }
+
+             .btn {
+                 display: block;
+                 width: 100%;
+                 padding: 12px 0;
+                 font-size: 1em;
+             }
+
+             .cta-banner {
+                 height: auto;
+                 padding: 3rem 1.5rem;
+             }
+
+             .cta-content {
+                 max-width: 100%;
+             }
+
+             .cta-heading {
+                 font-size: 32px;
+                 line-height: 40px;
+                 margin-bottom: 1rem;
+             }
+
+             .cta-subtext {
+                 font-size: 16px;
+                 line-height: 24px;
+                 margin-bottom: 1.5rem;
+             }
+
+             .cta-actions {
+                 flex-direction: column;
+                 gap: 12px;
+             }
+
+             .cta-primary,
+             .cta-secondary {
+                 width: 100%;
+                 padding: 12px 0;
+                 font-size: 16px;
+                 line-height: 20px;
+             }
+
+             .cta-secondary img {
+                 width: 16px;
+                 height: 16px;
+             }
+
+             .footer-container {
+                 flex-direction: column;
+                 align-items: stretch;
+                 padding: 40px 10px 10px;
+             }
+
+             .footer-branding {
+                 margin: 0 auto 20px;
+             }
+
+             .footer-columns {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 12px;
+                 width: 100%;
+             }
+
+             .footer-column ul {
+                 padding: 0;
+                 margin: 0;
+             }
+
+             .footer-column ul li:not(:first-child) {
+                 display: none;
+             }
+
+             .footer-column ul li:first-child {
+                 cursor: pointer;
+                 position: relative;
+                 padding-right: 20px;
+             }
+
+             .footer-column ul li:first-child::after {
+                 content: "▼";
+                 position: absolute;
+                 right: 520px;
+                 font-size: 0.8em;
+             }
+
+             .footer-column.active ul li {
+                 display: list-item;
+             }
+
+             .footer-column.active ul li:first-child::after {
+                 content: "▲";
+             }
+
+             .copyright {
+                 text-align: center;
+                 margin-top: 30px;
              }
          }
     </style>
@@ -1305,7 +1558,7 @@
             <a href="#" class="cta-primary">Try for free</a>
             <a href="#" class="cta-secondary">
                 Contact Sales
-                <img src="../images/ArrowCTA.png" alt="arrow" width="24" height="24">
+                <img src="../images/ArrowCTA.png" alt="arrow">
             </a>
         </div>
     </div>
@@ -1392,6 +1645,13 @@
         firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
         firstAnswer.previousElementSibling.querySelector('.faq-icon').textContent = '-';
     }
+
+    document.querySelectorAll('.footer-column').forEach(col => {
+        const header = col.querySelector('ul li:first-child');
+        header.addEventListener('click', () => {
+            col.classList.toggle('active');
+        });
+    });
 </script>
 </body>
 </html>
